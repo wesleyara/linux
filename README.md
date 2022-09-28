@@ -38,6 +38,16 @@ Documentação do que estou aprendendo sobre LINUX, afim de facilitar a consulta
 
 [1.16 CHMOD](#116-chmod)
 
+[1.17 ZIP e UNZIP](#117-zip-e-unzip)
+
+[1.18 TAR](#118-tar)
+
+[1.19 BZIP2](#119-bzip2)
+
+[1.20 PS](#120-ps)
+
+[1.21 KILL](#121-kill)
+
 
 [2. Comandos Intermediários](#2-comandos-intermediários)
 
@@ -211,6 +221,72 @@ ping -c 4 host
 # Altera as permissões do arquivo especificado
 chmod 777 arquivo
 ```
+
+### 1.17 ZIP e UNZIP
+---
+```bash
+# Compacta o arquivo especificado
+zip arquivo.zip arquivo
+
+# Compacta o diretório especificado
+zip -r pasta.zip pasta
+
+# Descompacta o arquivo especificado
+unzip arquivo.zip
+
+# Lista o conteúdo do arquivo especificado
+unzip -l arquivo.zip
+```
+
+### 1.18 TAR
+---
+```bash
+# Compacta o arquivo especificado
+tar -cvf arquivo.tar.gz arquivo
+
+# Compacta o diretório especificado
+tar -cvf pasta.tar.gz pasta
+
+# Descompacta o arquivo especificado
+tar -xvf arquivo.tar.gz
+
+# Lista o conteúdo do arquivo especificado
+tar -tvf arquivo.tar.gz
+```
+
+### 1.19 BZIP2
+---
+```bash
+# Compacta o arquivo especificado
+tar -cvjf arquivo.tar.bz2 arquivo
+
+# Compacta o diretório especificado
+tar -cvjf pasta.tar.bz2 pasta
+
+# Descompacta o arquivo especificado
+tar -xvjf arquivo.tar.bz2
+```
+
+### 1.20 PS
+---
+```bash
+# Exibe os processos ativos
+ps -e
+
+# Exibe os processos ativos com detalhes a mais
+ps -ef
+
+# Filtra os processos ativos pelo nome especificado
+ps -ef | grep nome
+```
+
+### 1.21 KILL
+---
+```bash
+# Mata o processo especificado
+kill -9 15487
+```
+
 
 ## 2. Comandos Intermediários
 
