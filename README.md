@@ -4,27 +4,47 @@ Documentação do que estou aprendendo sobre LINUX, afim de facilitar a consulta
 
 ## Sumário
 
-- [1. Comandos básicos](#1-comandos-básicos)
-- [1.1 CD](#11-cd)
-- [1.2 LS](#12-ls)
-- [1.3 MKDIR](#13-mkdir)
-- [1.4 RM](#14-rm)
-- [1.5 CP](#15-cp)
-- [1.6 MV](#16-mv)
-- [1.7 CAT](#17-cat)
-- [1.8 PWD](#18-pwd)
-- [1.9 ECHO](#19-echo)
-- [1.10 WHOAMI](#110-whoami)
-- [1.11 TOUCH](#111-touch)
-- [1.12 TAIL](#112-tail)
-- [1.13 HEAD](#113-head)
-- [1.14 GREP](#114-grep)
-- [1.15 PING](#115-ping)
-- [1.16 CHMOD](#116-chmod)
+[1. Comandos básicos](#1-comandos-básicos)
 
-- [2. Comandos Intermediários](#2-comandos-intermediários)
-- [2.1 Concatenação de comandos](#21-concatenação-de-comandos)
-- [2.2 Redirecionamento entre comandos](#22-redirecionamento-entre-comandos)
+[1.1 CD](#11-cd)
+
+[1.2 LS](#12-ls)
+
+[1.3 MKDIR](#13-mkdir)
+
+[1.4 RM](#14-rm)
+
+[1.5 CP](#15-cp)
+
+[1.6 MV](#16-mv)
+
+[1.7 CAT](#17-cat)
+
+[1.8 PWD](#18-pwd)
+
+[1.9 ECHO](#19-echo)
+
+[1.10 WHOAMI](#110-whoami)
+
+[1.11 TOUCH](#111-touch)
+
+[1.12 TAIL](#112-tail)
+
+[1.13 HEAD](#113-head)
+
+[1.14 GREP](#114-grep)
+
+[1.15 PING](#115-ping)
+
+[1.16 CHMOD](#116-chmod)
+
+
+[2. Comandos Intermediários](#2-comandos-intermediários)
+
+[2.1 Concatenação de comandos](#21-concatenação-de-comandos)
+
+[2.2 Redirecionamento entre comandos](#22-redirecionamento-entre-comandos)
+
 
 ## 1. Comandos básicos
 Seção para anotar comandos mais simples.
