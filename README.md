@@ -48,6 +48,8 @@ Documentação do que estou aprendendo sobre LINUX, afim de facilitar a consulta
 
 [1.21 KILL](#121-kill)
 
+[1.22 LOCATE](#122-locate)
+
 
 [2. Comandos Intermediários](#2-comandos-intermediários)
 
@@ -218,8 +220,13 @@ ping -c 4 host
 ### 1.16 CHMOD
 ---
 ```bash
-# Altera as permissões do arquivo especificado
-chmod 777 arquivo
+# Adiciona permissão de execução para o usuário, grupo e outros
+chmod +x arquivo
+
+# Remove permissão de execução para o usuário, grupo e outros
+chmod -x arquivo
+
+# Permite executar arquivos sh clicando diretamente neles
 ```
 
 ### 1.17 ZIP e UNZIP
@@ -285,6 +292,16 @@ ps -ef | grep nome
 ```bash
 # Mata o processo especificado
 kill -9 15487
+```
+
+### 1.22 LOCATE
+---
+```bash
+# Exibe o caminho do arquivo especificado
+locate firefox
+
+# Atualiza o banco de dados do locate
+updatedb
 ```
 
 
