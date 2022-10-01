@@ -304,6 +304,19 @@ locate firefox
 updatedb
 ```
 
+### 1.23 DPKG
+---
+```bash
+# Instala o pacote especificado
+dpkg -i pacote.deb
+
+# Remove o pacote especificado
+dpkg -r pacote
+
+# Lista os pacotes instalados
+dpkg -l
+```
+
 
 ## 2. Comandos Intermediários
 
