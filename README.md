@@ -317,6 +317,31 @@ dpkg -r pacote
 dpkg -l
 ```
 
+### SSH
+---
+```bash
+# Conecta ao servidor especificado
+ssh user@host
+
+# Conecta ao servidor especificado, com gráfico
+ssh -X user@host
+
+# Conecta ao servidor especificado, especificando a porta
+ssh -p 2222 user@host
+
+# Conecta ao servidor especificado, especificando a chave privada
+ssh -i chave.pem user@host
+```
+
+### 1.24 SCP
+---
+```bash
+# Copia o arquivo especificado para o servidor especificado
+scp arquivo user@host:/caminho
+
+# Copia o arquivo especificado do servidor especificado
+scp user@host:/caminho/arquivo arquivo
+```
 
 ## 2. Comandos Intermediários
 
@@ -326,7 +351,7 @@ Seção para anotar alguns comandos com grau de complexidade maior.
 ---
 Utilizando concatenação entre comandos e o que fazem:
 
-```sh
+```bash
 sudo apt update && sudo apt upgrade 
 # Se o primeiro for verdadeira o segundo será executado;
 
@@ -341,7 +366,27 @@ sudo apt update ; sudo apt upgrade
 ---
 Pegando o output do primeiro comando e inputando no segundo:
 
-```sh
+```bash
 ls /etc | tee arquivos.txt
 ```
 
+### 2.3 Diretórios de scripts
+---
+Quando queremos utilizar scripts criados por nós mesmos diretamente no terminal, temos dois diretórios importantes:
+
+- /etc/init.d = Todos os scripts (services) que irão iniciar junto com a máquina;
+- /usr/bin = Todos os scripts adicionados que podem ser chamados de qualquer lugar pelo terminal.
+
+### 2.4 Instalar programas que vem em tar.gz
+Para realizar essa instalação é necessário descompactar, acessar a pasta e rodar os seguintes comandos:
+
+```bash
+# Para checar todas as depedências, rode
+./configure
+
+# Para montar o pacote
+make
+
+# Para instalar o pacote
+sudo make install
+```
