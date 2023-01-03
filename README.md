@@ -50,6 +50,14 @@ Documentação do que estou aprendendo sobre LINUX, afim de facilitar a consulta
 
 [1.22 LOCATE](#122-locate)
 
+[1.23 DPKG](#123-dpkg)
+
+[1.24 SSH](#124-ssh)
+
+[1.25 SCP](#125-scp)
+
+[1.26 LSOF](#126-lsof)
+
 
 [2. Comandos Intermediários](#2-comandos-intermediários)
 
@@ -317,7 +325,7 @@ dpkg -r pacote
 dpkg -l
 ```
 
-### SSH
+### 1.24 SSH
 ---
 ```bash
 # Conecta ao servidor especificado
@@ -333,7 +341,7 @@ ssh -p 2222 user@host
 ssh -i chave.pem user@host
 ```
 
-### 1.24 SCP
+### 1.25 SCP
 ---
 ```bash
 # Copia o arquivo especificado para o servidor especificado
@@ -341,6 +349,13 @@ scp arquivo user@host:/caminho
 
 # Copia o arquivo especificado do servidor especificado
 scp user@host:/caminho/arquivo arquivo
+```
+
+### 1.26 LSOF
+
+```bash
+# Exibe os arquivos abertos pelo processo especificado
+lsof -p 15487
 ```
 
 ## 2. Comandos Intermediários
