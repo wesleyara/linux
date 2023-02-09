@@ -3,7 +3,7 @@
 Documentação do que estou aprendendo sobre LINUX, afim de facilitar a consulta e consequentemente ajudar caso seja necessário.
 
 ## Configurações e instalações
----
+
 ### Aliases
 
 Os aliases são comandos que podem ser executados através de um atalho. Para criar um alias, siga o exemplo do arquivo [aliases](/doc//aliases.sh), dependendo de qual terminal você está utilizando, o nome do arquivo pode ser diferente afim de identificar de forma mais prática, porém é importante que você faça a seguinde config:
@@ -45,7 +45,7 @@ Muitas vezes precisamos criar diversos bancos de dados em Postgress para testes,
 Para instalar o Postgres e criar um banco de dados, veja o arquivo [postgres-with-docker](/doc/postgres-with-docker.sh).
 
 ## Sumário de comandos
----
+
 ## [1. Comandos básicos](#1-comandos-básicos)
 
 [1.1 CD](#11-cd)
