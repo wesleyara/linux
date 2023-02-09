@@ -17,7 +17,7 @@ nano ~/.bashrc
 
 # adicione o seguinte conteúdo no final do arquivo
 if [ -f ~/.bashrc_aliases ]; then
-    . ~/.bashrc_aliases
+    source ~/.bashrc_aliases
 fi
 ```
 
@@ -30,7 +30,7 @@ nano ~/.zshrc
 
 # adicione o seguinte conteúdo no final do arquivo
 if [ -f ~/.zshrc_aliases ]; then
-    . ~/.zshrc_aliases
+    source ~/.zshrc_aliases
 fi
 ```
 
