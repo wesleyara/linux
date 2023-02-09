@@ -5,66 +5,67 @@ Documentação do que estou aprendendo sobre LINUX, afim de facilitar a consulta
 ## Sumário
 
 [1. Comandos básicos](#1-comandos-básicos)
-
+---
 [1.1 CD](#11-cd)
-
+<br/>
 [1.2 LS](#12-ls)
-
+<br/>
 [1.3 MKDIR](#13-mkdir)
-
+<br/>
 [1.4 RM](#14-rm)
-
+<br/>
 [1.5 CP](#15-cp)
-
+<br/>
 [1.6 MV](#16-mv)
-
+<br/>
 [1.7 CAT](#17-cat)
-
+<br/>
 [1.8 PWD](#18-pwd)
-
+<br/>
 [1.9 ECHO](#19-echo)
-
+<br/>
 [1.10 WHOAMI](#110-whoami)
-
+<br/>
 [1.11 TOUCH](#111-touch)
-
+<br/>
 [1.12 TAIL](#112-tail)
-
+<br/>
 [1.13 HEAD](#113-head)
-
+<br/>
 [1.14 GREP](#114-grep)
-
+<br/>
 [1.15 PING](#115-ping)
-
+<br/>
 [1.16 CHMOD](#116-chmod)
-
+<br/>
 [1.17 ZIP e UNZIP](#117-zip-e-unzip)
-
+<br/>
 [1.18 TAR](#118-tar)
-
+<br/>
 [1.19 BZIP2](#119-bzip2)
-
+<br/>
 [1.20 PS](#120-ps)
-
+<br/>
 [1.21 KILL](#121-kill)
-
+<br/>
 [1.22 LOCATE](#122-locate)
-
+<br/>
 [1.23 DPKG](#123-dpkg)
-
+<br/>
 [1.24 SSH](#124-ssh)
-
+<br/>
 [1.25 SCP](#125-scp)
-
+<br/>
 [1.26 LSOF](#126-lsof)
-
+<br/>
+[1.27 AWK](#127-awk)
 
 [2. Comandos Intermediários](#2-comandos-intermediários)
-
+---
 [2.1 Concatenação de comandos](#21-concatenação-de-comandos)
-
+<br />
 [2.2 Redirecionamento entre comandos](#22-redirecionamento-entre-comandos)
-
+<br />
 
 ## 1. Comandos básicos
 Seção para anotar comandos mais simples.
@@ -356,6 +357,16 @@ scp user@host:/caminho/arquivo arquivo
 ```bash
 # Exibe os arquivos abertos pelo processo especificado
 lsof -p 15487
+```
+
+### 1.27 AWK
+
+```bash
+# Exibe as linhas que contém a palavra especificada
+awk '/palavra/' arquivo
+
+# Exibe todos nomes de arquivos sem suas extensões
+ls | awk -F. '{print $1}'
 ```
 
 ## 2. Comandos Intermediários
