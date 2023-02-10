@@ -9,7 +9,7 @@ convert_images() {
   for file in *.jpg; do
       # Definindo uma variável local para pegar o nome do arquivo sem a extensão
       local file_name=$(ls "$file" | awk -F. '{print $1}')
-      convert "$file" "png/${file%.jpg}.png"
+      convert "$filename" "png/${filename}.png"
   done
 }
 
