@@ -2,6 +2,8 @@
 
 Documentação do que estou aprendendo sobre LINUX, afim de facilitar a consulta e consequentemente ajudar caso seja necessário.
 
+Veja em [anotações](/docs/anotations) algumas anotações que fiz durante o aprendizado.
+
 ## Configurações e instalações
 
 ### Aliases
