@@ -1,0 +1,22 @@
+#! /bin/bash
+
+# Generate a random key
+# Usage: randomkey [length]
+
+CHARS="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789çÇ@#!$%&*"
+
+function randomkey {
+    local i
+    local key
+    for (( i = 0; i < $1; i++ )); do
+        key+=${CHARS:$(($RANDOM%${#CHARS})):1}
+    done
+    echo "Senha gerada: $key"
+}
+
+if [ -z "$1" ]; then
+    echo "Usage: randomkey [length]"
+    exit 1
+fi
+
+randomkey $1

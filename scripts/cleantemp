@@ -1,0 +1,9 @@
+#! /bin/bash
+
+# Remove arquivos temporários
+sudo rm -rf /tmp/*
+
+# Remove arquivos de log antigos
+sudo find /var/log -type f -name "*.log" -mtime +7 -exec rm -f {} \;
+
+echo "Arquivos temporários removidos"

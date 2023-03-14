@@ -4,6 +4,38 @@ Documentação do que estou aprendendo sobre LINUX, afim de facilitar a consulta
 
 Veja em [anotações](/docs/anotations) algumas anotações que fiz durante o aprendizado.
 
+## Scripts
+
+### cleantemp
+
+Script para limpar os arquivos temporários do sistema.
+
+```bash
+# adicione ao /bin
+sudo cp scripts/cleantemp usr/bin/cleantemp
+
+# dê permissão de execução
+sudo chmod +x usr/bin/cleantemp
+
+# execute
+cleantemp
+```
+
+### randomkey
+
+Script para gerar uma chave aleatória.
+
+```bash
+# adicione ao /bin
+sudo cp scripts/randomkey usr/bin/randomkey
+
+# dê permissão de execução
+sudo chmod +x usr/bin/randomkey
+
+# execute
+randomkey 12
+```
+
 ## Configurações e instalações
 
 ### Aliases
