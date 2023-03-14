@@ -4,6 +4,14 @@ Documentação do que estou aprendendo sobre LINUX, afim de facilitar a consulta
 
 Veja em [anotações](/docs/anotations) algumas anotações que fiz durante o aprendizado.
 
+## Utilização
+
+Para utilizar algumas das instruções abaixo, onde é necessário ter os arquivos em um diretório, você pode clonar o repositório:
+
+```bash
+git clone https://github.com/wesleyara/linux.git
+```
+
 ## Scripts
 
 ### cleantemp
