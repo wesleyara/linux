@@ -31,7 +31,11 @@ fi
 if [ -z "$2" ]; then
     curl -s "$1" >"$log"
 else
-    curl -X POST -d "$2" "$1" >"$log"
+    if [[ "$2" == "{"* ]]; then
+        curl -s -X POST -H "Content-Type: application/json" -d "$2" "$1" >"$log"
+    else
+        curl -s -X POST -d "$2" "$1" >"$log"
+    fi
 fi
 
 $editor "$log"
