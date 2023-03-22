@@ -1,0 +1,37 @@
+#! /bin/bash
+
+# Faz requisição, salva em um arquivo de log em ~/fetch/temp e depois abre o arquivo com o editor padrão do sistema
+
+log="$HOME/fetch/temp/fetch.json"
+editor="code"
+
+if [ -z "$1" ]; then
+    echo "Usage: fetch <url>"
+    exit 1
+fi
+
+if [ "$1" = "-h" ] || [ "$1" = "--help" ]; then
+    echo "1. GET: fetch <url>"
+    echo "2. POST: fetch <url> <body>"
+    echo "3. -e, --example: fetch -e"
+    exit 0
+fi
+
+if [ "$1" = "-e" ] || [ "$1" = "--example" ]; then
+    echo "GET: fetch https://jsonplaceholder.typicode.com/todos/1"
+    echo "POST: fetch https://jsonplaceholder.typicode.com/posts 'title=foo&body=bar&userId=1'"
+    echo "POST: fetch https://jsonplaceholder.typicode.com/posts '{\"title\":\"foo\",\"body\":\"bar\",\"userId\":1}'"
+    exit 0
+fi
+
+if [ ! -d "$HOME/fetch/temp" ]; then
+    mkdir -p "$HOME/fetch/temp"
+fi
+
+if [ -z "$2" ]; then
+    curl -s "$1" >"$log"
+else
+    curl -X POST -d "$2" "$1" >"$log"
+fi
+
+$editor "$log"
