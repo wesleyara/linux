@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+
+FOLDER_NAME="test-$1"
+
+yarn build
+npm link
+cd ..
+ 
+if [ -d $FOLDER_NAME ]; then
+  rm -rf $FOLDER_NAME
+fi
+
+mkdir $FOLDER_NAME
+cd $FOLDER_NAME
+npm init -y
+npm link $1
+clear
+npx ../$1
