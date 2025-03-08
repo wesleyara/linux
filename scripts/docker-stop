@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+
+DOCKER_PS=$(docker ps -q)
+
+if [ -n "$DOCKER_PS" ]; then
+  docker stop $DOCKER_PS
+fi
+
+
+# This script stops the running docker container
+
+# How to use:
+
+# Add permission to execute the script and move it to /usr/bin:
+
+# chmod +x scripts/docker-stop
+# sudo mv scripts/docker-stop /usr/bin/docker-stop
+
+# Add the command to crontab to run at startup:
+# crontab -e
+# @reboot /usr/bin/docker-stop
